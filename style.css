@@ -1,0 +1,290 @@
+/* [palette] https://colorhunt.co/palette/282f44e6af2ef5d061ececec*/
+:root {
+  --second: #212531;
+  --third: #c5ab7d;
+  --forth: #c4beb5;
+  --light: #ececec;
+}
+body {
+  background: #eee;
+  transition: all 0.4s ease;
+  font-family: serif;
+}
+.gold {
+  color: var(--third);
+}
+.dark {
+  color: var(--second);
+}
+/*---- navbar ----*/
+.navbar {
+  background-color: transparent !important;
+  color: #e8e2db !important;
+}
+.navbar .dark {
+  background-color: var(--second);
+  transition: top 0.5s ease-in-out;
+}
+.navbar .top-info {
+  opacity: 0.7;
+}
+.navbar ul li a {
+  color: #e8e2db !important;
+  opacity: 0.7;
+  margin: auto 10px;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  border-bottom: 2px solid var(--third);
+  opacity: 1;
+}
+.navbar-collapse {
+  justify-content: end;
+}
+.navbar-brand {
+  color: #ececec !important;
+}
+.fixed-top {
+  transition: all 0.5s ease-in-out !important;
+}
+.fixed-top.scroll {
+  /* top: -70px!important; */
+  background-color: #212531 !important;
+  border-bottom: 1px solid #c5ab7d;
+}
+/*---- header ----*/
+.header {
+  /* background: radial-gradient(#fff, #E8E2DB); */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/pexels-scott-webb-305833.jpg"); /*Photo by Scott Webb from Pexels */
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: var(--light);
+}
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.header .btn {
+  color: var(--second);
+  border: 1px solid var(--third);
+  background-color: var(--third);
+  border-radius: 20px;
+  width: 25%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.header .btn:hover {
+  background-color: var(--second);
+  color: var(--third);
+}
+.header .fa-brands {
+  font-size: 25px;
+  color: var(--third);
+}
+
+/*---- features ----*/
+#features {
+  background-color: transparent;
+  color: var(--light);
+  margin-top: -65px;
+}
+#features .fa-solid {
+  color: var(--third);
+}
+#features .col-lg-3 {
+  background-color: var(--second);
+  border: 1px solid var(--third);
+  transition: all 0.5s ease-in-out;
+}
+#features .col-lg-3:hover {
+  background-color: var(--light);
+  color: var(--second);
+  margin-top: -10px;
+}
+#features .btn {
+  color: var(--third);
+}
+
+/*---- about ----*/
+#about {
+  padding-bottom: 100px;
+}
+#about .about-border {
+  border: 1px solid var(--third);
+}
+#about .num {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--third);
+}
+#about .num span {
+  font-size: 2rem;
+}
+#about .com-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#about .com-num span {
+  font-size: 2.5rem;
+}
+/*---- our services ----*/
+.services {
+  background-color: var(--light);
+  padding-top: 100px;
+  padding-bottom: 70px;
+  color: var(--light);
+  background-color: var(--second);
+}
+.services .col-lg-5 {
+  border: 1px solid var(--third);
+  margin: 10px;
+}
+.services .col-lg-5 .fa-solid,
+.services .col-lg-5 .fa-brands {
+  color: var(--third);
+  margin-top: -20px;
+  background-color: var(--second);
+  padding: 0 7px;
+}
+.services h2,
+h4 {
+  color: var(--light);
+}
+.services h4::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: var(--third);
+  display: block;
+  margin-top: 15px;
+}
+
+/*---- parteners ----*/
+#parteners {
+  background-color: var(--forth);
+}
+/*---- blog ----*/
+#blog {
+  padding-top: 70px;
+}
+#blog .btn,
+#blog h5:nth-child(1) {
+  color: var(--third);
+}
+#blog .underline::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--second);
+  position: absolute;
+  left: 48%;
+  margin-top: 17px;
+}
+#blog .formBtn {
+  color: var(--second);
+  border: 1px solid var(--third);
+  background-color: var(--third);
+  border-radius: 20px;
+  width: 25%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+}
+#blog .formBtn:hover {
+  background-color: var(--second);
+  color: var(--third);
+}
+/*---- footer ----*/
+footer {
+  background-color: var(--second);
+  color: var(--third);
+}
+footer .lightText {
+  color: var(--light);
+}
+footer .fa-brands {
+  font-size: 25px;
+  margin: 5px;
+}
+footer .footer-info {
+  border-left: 1px solid var(--third);
+}
+footer input {
+  width: 100%;
+  height: 40px;
+}
+footer .btn {
+  background-color: var(--third);
+  border: none;
+  width: 100%;
+  margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .top-info {
+    display: none !important;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header .btn {
+    width: 30%;
+  }
+  footer .footer-info {
+    border-left: none;
+    margin-top: 2rem;
+  }
+  footer input {
+    width: 50%;
+  }
+  footer .btn {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .header .btn {
+    width: 50%;
+  }
+  #features {
+    margin-top: 0px;
+  }
+  #features .col-lg-3 {
+    margin-bottom: 0px !important;
+  }
+  #about .num {
+    border-right: none;
+  }
+  #about .com-num.border-end {
+    border-right: none !important;
+  }
+  .services .col-lg-3 {
+    width: 90%;
+  }
+  #news .col-md-4 {
+    margin-bottom: 7px !important;
+  }
+  footer .footer-info {
+    border-left: none;
+    margin-top: 2rem;
+  }
+  footer input {
+    width: 100%;
+  }
+  footer .btn {
+    width: 100%;
+  }
+}
